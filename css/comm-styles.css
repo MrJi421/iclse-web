@@ -1,0 +1,77 @@
+/* Organizing Committee Section Styling */
+#organizing-committee {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+#organizing-committee h2 {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+#organizing-committee p {
+    color: #34495e;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+}
+
+/* Committee Card Styling */
+.committee-card {
+    background: rgba(255, 255, 255, 0.8); /* Light background for visibility */
+    border-radius: 15px;
+    /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%; /* Full width */
+    max-width: 600px; /* Max width for better layout control */
+    position: relative;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.2); /* Transparent white */
+    border-radius: 20px;
+    backdrop-filter: blur(10px); /* Glass effect */
+    color: #2c3e50; /* Dark color for text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border-left: 1px solid rgba(41, 128, 185, 0.2); /* Subtle border */
+    border-top: 1px solid rgba(41, 128, 185, 0.2); /* Subtle border */
+}
+
+.committee-card img {
+    border: 2px solid #3498db; /* Blue border for image */
+    margin-right: 20px; /* Adds spacing between image and text */
+}
+
+.committee-card .committee-content {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Center text within the div */
+    margin-bottom: -20px;
+
+}
+
+.committee-card h5 {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.committee-card p {
+    color: #7f8c8d;
+
+}
+
+/* Hover Effect */
+.committee-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.left-line{
+    border-left: 5px solid #2980b9;
+    border-right: 5px solid #2980b9;
+    border-radius: 20px;
+}
+
+.text-title{
+    padding-left: 25px;
+}

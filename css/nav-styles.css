@@ -1,0 +1,37 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+    /* color: #333; */
+}
+
+
+/* Navbar Styling */
+.navbar {
+    background-color: #34495e;
+}
+.navbar .navbar-brand img {
+    height: 50px;
+}
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.navbar-nav .nav-link:hover {
+    color: #c4c4c4 !important;
+}
+footer .navbar {
+    background-color: transparent;
+}
+
+.text-primary, .text-title{
+    color: #2980b9;
+}

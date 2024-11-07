@@ -1,0 +1,522 @@
+/* Reset Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+Body Styles
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+} */
+
+
+/* Loading Spinner */
+/* #loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+} */
+
+/* .spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.3em;
+} */
+
+/* Slider Image Styling */
+.carousel-item img {
+    height: 75vh; /* 75% of the viewport height */
+    object-fit: cover;
+}
+
+/* Overlay Styling */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 75%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Button Styling */
+.carousel-caption .btn {
+    border-radius: 30px; /* Rounded buttons */
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    font-weight: bold;
+
+}
+
+.carousel-caption .btn-primary {
+    background-color: #2980b9;
+    border: none;
+}
+
+.carousel-caption .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+/* Hover Effects */
+.carousel-caption .btn:hover {
+    transform: translateY(-5px); /* Button hover lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption .btn-primary:hover {
+    background-color: #1d4f70;  /* Transparent background */
+    border: 2px solid #1d4f70; 
+    transform: scale(1.05);           /* Slightly enlarge button on hover */
+}
+
+
+.carousel-caption .btn-secondary:hover {
+    background-color: transparent;
+    border: #ffffff;
+    border-top: 2px solid ;   /* Top border */
+    border-right: 3px solid; /* Right border */
+    border-bottom: 5px solid; /* Bottom border */
+    border-left: 2px solid;
+    transform: scale(1.05);
+}
+
+.carousel-caption:hover {
+    background: rgba(0, 0, 0, 0.7); /* Darker overlay on hover */
+}
+
+/* Fade In Animation for Loading */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.carousel-item {
+    transition: opacity 1s ease-in-out !important;
+}
+
+
+/* Button hover effects */
+/* .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+} */
+
+
+/* Announcement Section */
+#announcement {
+    background-color: #f7f7f7; /* Light background color */
+    padding: 2rem 0;
+}
+
+.announcement-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.announcement-text {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.announcement-text p {
+    margin: 0;
+    padding: 0;
+    display: inline-block; /* Keeps each line in a row */
+    padding-right: 2rem; /* Space between lines */
+    opacity: 0;  
+    transform: translateX(100%);  
+}
+
+/* Scrolling animation */
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        /* opacity: 0; */
+    }
+}
+
+
+
+/* About Conference Section */
+#about-conference {
+    background-color: #ecf0f1; /* Light background for a clean look */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fadeInUp animation to elements */
+.animated {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Trigger animation when element is in view */
+.animated.fadeInUp {
+    animation-delay: 0.5s; /* Delay the animation */
+}
+
+/* Styling for text and button */
+#about-conference h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+#about-conference p {
+    font-size: 1.2rem;
+    color: #34495e;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+#about-conference .btn-primary {
+    background-color: #2980b9;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+}
+
+#about-conference .btn-primary:hover {
+    background-color: #1f6399;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about-conference .img-fluid {
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: You can add this to fine-tune the button appearance */
+.btn-secondary {
+    background-color: #262626;
+    border-radius: 25px;  /* Rounded buttons */
+    padding: 10px 25px;  /* Adjust padding for better button size */
+}
+
+#about-conference .btn:hover {
+    transform: scale(1.03);           /* Slightly enlarge button on hover */
+}
+
+
+#about-conference .btn-secondary:hover {
+    background-color: #262626;
+    border: none;
+    transform: scale(1.03);
+}
+
+
+
+
+
+/* Custom Line Styling with fade effect */
+.custom-hr {
+    height: 3px; /* Height of the line */
+    width: 100%; /* Full width */
+    margin: auto; /* Centers the line and adds space around it */
+    background: linear-gradient(to right, transparent 20%, #3498db 20%, #3498db 80%, transparent 80%);
+    /* Creates a gradient that fades from transparent to blue at the ends */
+}
+
+
+
+/* Timeline Section */
+#timeline {
+    background-color: #ecf0f1;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Vertical Line connecting the dots */
+/* .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); Center the line
+    width: 3px;
+    background-color: #2c3e50;
+    z-index: 1;
+} */
+
+/* Timeline Items */
+.timeline-item {
+    position: relative;
+    width: 80%;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Timeline Points */
+.timeline-point {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3498db;
+    border: 2px solid #2980b9;
+    position: absolute;
+    left: 50%;
+    /* top: -10px; Position points above the line */
+    transform: translateX(-50%); /* Center the dots */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+/* Timeline Content */
+.timeline-content {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-left: 30px;
+    flex: 1;
+    z-index: 0;
+}
+
+/* Title and Paragraph */
+.timeline-content h5 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    color: #34495e;
+}
+
+/* Animation for Timeline Items */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Hover Effects */
+.timeline-item:hover .timeline-point {
+    background-color: #2980b9;
+    transform: scale(1.2);
+}
+
+.timeline-item:hover .timeline-content {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline {
+        width: 100%;
+    }
+    .timeline-item {
+        width: 90%;
+    }
+}
+
+
+/* Timeline Section */
+#timeline {
+    background-color: #ecf0f1;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item {
+    position: relative;
+    width: 80%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    animation: fadeInLeft 1s ease-out forwards;
+    opacity: 0;
+}
+
+/* Timeline Points */
+.timeline-point {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3498db;
+    border: 2px solid #2980b9;
+    position: absolute;
+    left: -40px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Timeline Content */
+.timeline-content {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-left: 30px;
+    flex: 1;
+}
+
+/* Title and Paragraph */
+.timeline-content h5 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    color: #34495e;
+}
+
+/* Animation for Timeline Items */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Hover Effects */
+.timeline-item:hover .timeline-point {
+    background-color: #2980b9;
+    transform: scale(1.2);
+}
+
+.timeline-item:hover .timeline-content {
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline {
+        width: 100%;
+    }
+    .timeline-item {
+        width: 90%;
+    }
+}
+
+
+
+/* Footer Styling */
+footer {
+    background-color: #262626;  /* Black background */
+    color: #fff;
+    padding: 30px 0;
+}
+
+/* Logo Section */
+footer .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contact Information */
+footer .text-md-start {
+    font-size: 0.9rem;
+}
+
+footer .text-white {
+    text-decoration: none;
+}
+
+/* Social Media Section */
+footer .fab {
+    font-size: 1.5rem;
+}
+
+footer .d-flex a:hover {
+    color: #3498db;  /* Blue hover effect */
+}
+
+/* Footer Navigation */
+footer .navbar {
+    background: none;
+}
+
+footer .navbar .nav-link {
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px 15px;
+    transition: color 0.3s ease;
+}
+
+footer .navbar .nav-link:hover {
+    color: #3498db;  /* Blue hover effect */
+}
+
+/* Footer Copyright Section */
+footer .text-center p {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+footer hr {
+    border-top: 1px solid #444;
+}

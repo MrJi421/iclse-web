@@ -1,0 +1,54 @@
+/* Registration Section Styling */
+#registration {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+#registration h2 {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+#registration p {
+    color: #34495e;
+}
+
+#registration .btn-primary{
+    background-color: #2980b9;
+    border-radius: 30px; /* Rounded buttons */
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    font-weight: bold;
+
+}
+
+#registration .btn-primary:hover{
+    background-color: #1d4f70;  /* Transparent background */
+    /* border: 2px solid #1d4f70;  */
+    transform: scale(1.05);           /* Slightly enlarge button on hover */
+
+}
+
+
+/* Fee List Styling */
+.fee-list .list-group-item {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    padding: 15px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Additional Information List Styling */
+.additional-info .list-group-item {
+    background: #ffffff;
+    border-left: 3px solid rgba(0, 0, 0, 0.1);
+    border-top: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #34495e;
+    margin-bottom: 10px;
+    padding: 15px;
+}
