@@ -35,3 +35,21 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(element);
     });
 });
+
+
+
+// Function to open the modal and display the clicked image
+function openModal(imgElement) {
+    var modal = document.getElementById("lightboxModal");
+    var modalImg = document.getElementById("modalImg");
+    var captionText = document.getElementById("caption");
+
+    modal.style.display = "block";
+    modalImg.src = imgElement.src;
+    captionText.innerHTML = imgElement.alt;
+}
+
+// Function to close the modal
+function closeModal() {
+    document.getElementById("lightboxModal").style.display = "none";
+}

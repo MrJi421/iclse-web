@@ -1,0 +1,75 @@
+/* Contact Us Section Styling */
+#contact-us {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+#contact-us h2 {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+#contact-us p {
+    color: #34495e;
+}
+
+/* Coordinator Card Styling */
+.coordinator-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.coordinator-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.coordinator-card img {
+    border-radius: 50%;
+    border: 2px solid #3498db;
+}
+
+.coordinator-card h5 {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.coordinator-card p {
+    color: #7f8c8d;
+}
+
+/* Contact Form Styling */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+#contact .btn-primary{
+    background-color: #2980b9;
+    border-radius: 30px; /* Rounded buttons */
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    font-weight: bold;
+
+}
+
+#contact .btn-primary:hover{
+    background-color: #1d4f70;  /* Transparent background */
+    /* border: 2px solid #1d4f70;  */
+    transform: scale(1.05);           /* Slightly enlarge button on hover */
+
+}
+
+
+/* Map Styling */
+.map iframe {
+    border-radius: 10px;
+    border: none;
+}
