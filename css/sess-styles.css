@@ -1,7 +1,7 @@
 /* Flip Card Styling */
 .flip-card {
     background-color: transparent;
-    width: 250px;
+    width: 450px;
     height: 300px;
     perspective: 1000px; /* Adds depth for 3D effect */
 }
@@ -40,8 +40,9 @@
 
 .session-image {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
+    /* margin-top: 0px; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -57,7 +58,7 @@
     background-color: #3498db;
     color: #ffffff;
     transform: rotateY(180deg); /* Flips the back side */
-    padding: 15px;
+    padding: 30px;
     border-radius: 10px;
 }
 
@@ -66,5 +67,5 @@
 }
 
 .flip-card-back p {
-    margin: 5px 0;
+    margin: 10px 0;
 }
