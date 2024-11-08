@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
     const lines = document.querySelectorAll('.announcement-text p');
     
-    lines.forEach((line, index) => {
+    lines.forEach((line) => {
         // Delay each line by 2-3 seconds
         setTimeout(() => {
             // Add the scrolling animation to each line after the delay
             line.style.animation = "scroll-text 30s linear infinite";
             line.style.opacity = 1;  // Make the text visible
-        }, 3000 * index);  // Delay 2 seconds for each line (3000ms = 3s)
+        }, 100);  // Delay 2 seconds for each line (3000ms = 3s)
     });
 });
 
