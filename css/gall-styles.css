@@ -27,6 +27,8 @@
     overflow: hidden;
     cursor: pointer;
     border-radius: 10px;
+    border-top: 1px solid #2c3e50;
+    border-left: 1px solid #2c3e50;
 }
 
 .gallery-item img {
@@ -47,13 +49,23 @@
 }
 
 .gallery-item.medium {
-    grid-row: span 2;
+    grid-row: span 3;
     grid-column: span 1;
+}
+
+.gallery-item.wide {
+    grid-row: span 2;
+    grid-column: span 4;
 }
 
 .gallery-item.small {
     grid-row: span 1;
-    grid-column: span 1;
+    grid-column: span 2;
+}
+
+.gallery-item.small-2 {
+    grid-row: span 1;
+    grid-column: span 3;
 }
 
 /* Lightbox Modal Styling */

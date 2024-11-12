@@ -53,3 +53,22 @@ function openModal(imgElement) {
 function closeModal() {
     document.getElementById("lightboxModal").style.display = "none";
 }
+
+
+
+document.getElementById("contact").addEventListener("submit", function(e) {
+    e.preventDefault();
+    var formData = new FormData(this);
+
+    fetch(this.action, {
+        method: this.method,
+        body: formData
+    }).then(response => response.text())
+      .then(result => {
+          alert("Thank you! Your response has been recorded.");
+          this.reset();
+      }).catch(error => {
+          console.error("Error:", error);
+          alert("Something went wrong. Please try again.");
+      });
+});
